@@ -70,7 +70,7 @@ def train(text, epochs=100, save_freq=10):
     model = build_model(BATCH_SIZE, SEQ_LENGTH, vocab_size)
     model.summary()
     # vizualizing the model in form of png
-    plot_model(model, to_file='model.png')
+    # plot_model(model, to_file='model.png')
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     #Train data generation
